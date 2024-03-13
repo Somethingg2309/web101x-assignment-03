@@ -1,0 +1,364 @@
+:root {
+  --color-primary: #eb8426;
+  --color-white: #fff;
+  --color-black: #000;
+  --font-global: "Roboto", sans-serif;
+  --color-gray: #e9e9e9;
+  --color-ligt-gray: #e8e9e9;
+  --color-brown-gray: #e2e2e2;
+  --color-text-aqua: #00fbff;
+}
+
+html {
+  font-family: var(--font-global);
+}
+
+/* lớp Dislay */
+.d-flex {
+  display: flex;
+}
+
+.d-block {
+  display: block;
+}
+
+.d-inline-block {
+  display: inline-block;
+}
+/* dilay , width = 50% bên phải */
+.d-w50p-ml50p {
+  width: 50%;
+  margin-left: 50%;
+}
+
+.d-w50p-mr50p {
+  width: 50%;
+  margin-right: 50%;
+}
+
+/* lớp Flex Layout */
+.flex-col {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.flex-row {
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.flex-hoz-center {
+  justify-content: center;
+}
+
+.flex-vec-center {
+  align-items: center;
+}
+
+.flex-center-perfect {
+  align-items: center;
+  justify-content: center;
+}
+/* lớp Dislay */
+
+/* lớp Grid layout */
+.grid-col-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.grid-col-3 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.gap-col-20 {
+  column-gap: 20px;
+}
+
+.gap-10 {
+  gap: 10px;
+}
+
+.gap-20 {
+  gap: 20px;
+}
+/* lớp Grid layout */
+
+/* lớp border Style */
+.border-thin-gray {
+  border: 1px solid var(--color-gray);
+}
+
+.btb-thin-gray {
+  border-top: 1px solid var(--color-gray);
+  border-bottom: 1px solid var(--color-gray);
+}
+
+.border-bot-primary {
+  border-bottom: 1px solid var(--color-primary);
+}
+
+.border-left-primary {
+  border-left: 1px solid var(--color-primary);
+}
+/* lớp border Style */
+
+/* lớp Padding Style */
+.plr-8 {
+  padding-right: 8px;
+  padding-left: 8px;
+}
+
+.plr-20-10 {
+  padding-right: 10px;
+  padding-left: 20px;
+}
+
+.plr-40-10 {
+  padding-right: 10px;
+  padding-left: 40px;
+}
+
+.plr-48-10 {
+  padding-right: 10px;
+  padding-left: 48px;
+}
+
+.plr-20 {
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+.plr-40 {
+  padding-right: 40px;
+  padding-left: 40px;
+}
+
+.ptb-16 {
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+.ptb-16-60 {
+  padding-top: 16px;
+  padding-bottom: 60px;
+}
+
+.ptb-72-36 {
+  padding-top: 72px;
+  padding-bottom: 36px;
+}
+
+.pb-20 {
+  padding-bottom: 20px;
+}
+
+.pb-40 {
+  padding-bottom: 40px;
+}
+
+.pb-60 {
+  padding-bottom: 60px;
+}
+
+.ptb-24 {
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+.pt-8 {
+  padding-top: 8px;
+}
+
+.pt-20 {
+  padding-top: 20px;
+}
+
+.pt-40 {
+  padding-top: 40px;
+}
+
+.pl-8 {
+  padding-left: 8px;
+}
+
+.pl-20 {
+  padding-left: 20px;
+}
+
+.pr-8 {
+  padding-right: 8px;
+}
+/* lớp Padding Style */
+
+/* lớp Margin Style */
+.mt-40 {
+  margin-top: 40px;
+}
+
+.mt-20 {
+  margin-top: 40px;
+}
+/* lớp Margin Style */
+
+/* lớp List Style */
+ul.list-dashed {
+  list-style: none;
+  margin-left: 0;
+  padding-left: 1em;
+  word-wrap: break-word;
+}
+
+ul.list-dashed > li:before {
+  display: inline-block;
+  content: "-";
+  width: 1em;
+  margin-left: -1em;
+}
+
+.list-style-none {
+  list-style-type: none;
+}
+
+ul.list-disc-blue {
+  list-style: none; /* bỏ các dấu đầu dòng mặc định */
+  position: relative;
+}
+
+ul.list-disc-blue > li::before {
+  content: ""; /* \2022 là Mã CSS/unicode cho dấu đầu dòng */
+  background-color: var(--color-text-aqua); /* đổi màu*/
+  border: 3px solid whitesmoke;
+  display: inline-block; /* thêm khoảng giữa đầu dòng và text */
+  width: 14px; /* thêm khoảng cách (tinh chỉnh nếu cần) */
+  height: 14px;
+  border-radius: 999px;
+  margin-left: -1.5rem; /* thêm khoảng cách (tinh chỉnh nếu cần) */
+}
+/* lớp List Style */
+
+/* lớp Text Style */
+.heading-1 {
+  font-weight: 500;
+  font-size: 3rem;
+  line-height: 4rem;
+}
+
+.heading-2 {
+  font-weight: 500;
+  font-size: 1.5rem;
+  line-height: 1.75rem;
+}
+
+.heading-3 {
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 1.75rem;
+}
+
+.heading-4 {
+  font-weight: 500;
+  font-size: 1.25rem;
+  line-height: 1.25rem;
+}
+
+.heading-5 {
+  font-weight: 500;
+  font-size: 0.85rem;
+  line-height: 1.25rem;
+}
+
+.heading-6 {
+  font-weight: 400;
+  font-size: 1.25rem;
+  line-height: 1.25rem;
+}
+
+.text-1 {
+  font-weight: 400;
+  font-size: 0.75rem;
+  line-height: 1rem;
+}
+
+.text-2 {
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+.text-3 {
+  font-weight: 400;
+  font-size: 0.8rem;
+  line-height: 1.5rem;
+}
+
+.text-link-1 {
+  text-decoration: none;
+}
+
+.text-thin-1 {
+  font-weight: 200;
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-upper {
+  text-transform: uppercase;
+}
+/* lớp Text Style */
+
+/* lớp Color */
+.text-white {
+  color: var(--color-white);
+}
+
+.text-content {
+  color: var(--color-black);
+}
+
+.text-blue {
+  color: var(--color-text-aqua);
+}
+/* lớp Color */
+
+/* lớp Backgournd Color */
+.bg-grey {
+  background-color: #f7f7f7;
+}
+
+.bg-light-gray {
+  background-color: var(--color-ligt-gray);
+}
+
+.bg-brown-gray {
+  background-color: var(--color-brown-gray);
+}
+/* lớp Backgournd Color */
+
+/* lớp Postion */
+.pos-rel {
+  position: relative;
+}
+
+.pos-abs {
+  position: absolute;
+}
+
+.pos-vec-center {
+  top: 50%;
+  transform: translateY(-50%);
+}
+/* lớp Postion */
+
+/* lớp Image */
+.banner-img {
+  width: 100%;
+  height: auto;
+}
+/* lớp Image */

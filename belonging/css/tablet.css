@@ -1,0 +1,67 @@
+@media only screen and (max-device-width: 1200px) and (min-device-width: 961px) {
+  /* Responsive Selector */
+  #navbar-lap {
+    display: none;
+  }
+
+  #navbar-tablet {
+    display: block;
+  }
+
+  #navbar-mobile {
+    display: none;
+  }
+
+  section#job-info-lap-mobile {
+    display: none;
+  }
+
+  section#job-info-tablet {
+    display: block;
+  }
+
+  section#certificate-lap-mobile {
+    display: none;
+  }
+
+  section#certificate-tablet {
+    display: block;
+  }
+  /* Responsive Selector */
+}
+
+@media only screen and (max-device-width: 961px) and (min-device-width: 577px) {
+  /* Responsive Selector */
+  #navbar-lap {
+    display: none;
+  }
+
+  #navbar-tablet {
+    display: block;
+  }
+
+  #navbar-mobile {
+    display: none;
+  }
+
+  .text-md-1 {
+    font-size: 13px;
+  }
+
+  section#job-info-lap-mobile {
+    display: none;
+  }
+
+  section#job-info-tablet {
+    display: block;
+  }
+
+  section#certificate-lap-mobile {
+    display: none;
+  }
+
+  section#certificate-tablet {
+    display: block;
+  }
+  /* Responsive Selector */
+}

@@ -1,0 +1,237 @@
+/* phần CSS của HTML */
+:root {
+  --color-primary: #eb8426;
+  --color-white: #fff;
+  --color-black: #000;
+  --font-global: "Roboto", sans-serif;
+  --color-gray: #e9e9e9;
+  --color-ligt-gray: #e8e9e9;
+  --color-brown-gray: #e2e2e2;
+  --color-text-aqua: #00fbff;
+}
+
+html {
+  font-family: var(--font-global);
+}
+/* phần CSS của HTML  */
+
+/* CSS helper Selector */
+.hlt-img-blur {
+  filter: contrast(0.5);
+}
+
+.bg-grey {
+  background-color: #f7f7f7;
+}
+
+.hlt-border-thin-gray {
+  border: 1px solid var(--color-gray);
+}
+
+.hlt-btb-thin-gray {
+  border-top: 1px solid var(--color-gray);
+  border-bottom: 1px solid var(--color-gray);
+}
+
+.bg-light-gray {
+  background-color: var(--color-ligt-gray);
+}
+
+.bg-brown-gray {
+  background-color: var(--color-brown-gray);
+}
+
+.info-wrapper {
+  border: 1px solid var(--color-gray);
+  height: 100%;
+}
+
+.list-style-none {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+ul.hlt-lst-dashed {
+  list-style: none;
+  margin-left: 0;
+  padding-left: 1em;
+  word-wrap: break-word;
+}
+
+ul.hlt-lst-dashed > li:before {
+  display: inline-block;
+  content: "-";
+  width: 1em;
+  margin-left: -1em;
+}
+ul.hlt-lst-disc-blue {
+  list-style: none; /* bỏ đầu dòng mặc định */
+  position: relative;
+}
+
+ul.hlt-lst-disc-blue > li::before {
+  content: ""; /* bỏ các dấu đầu dòng mặc định */
+  background-color: var(--color-text-aqua); /* đổi màu*/
+  border: 3px solid whitesmoke;
+  display: inline-block; /* thêm khoảng giữa đầu dòng và text */
+  width: 14px; /* thêm khoảng cách (tinh chỉnh nếu cần) */
+  height: 14px;
+  border-radius: 999px;
+  margin-left: -1.5rem; /* thêm khoảng cách (tinh chỉnh nếu cần) */
+}
+
+.hlt-rounded-4 {
+  border-radius: 10px;
+}
+
+.hlt-mw-1 {
+  min-width: 360px;
+}
+
+.hlt-mw-2 {
+  min-width: 210px;
+}
+
+.hlt-ms-auto {
+  margin-left: auto;
+}
+
+.hlt-me-auto {
+  margin-right: auto;
+}
+
+.hlt-bbot-primary {
+  border-bottom: 1px solid var(--color-primary);
+}
+
+.hlt-bleft-primary {
+  border-left: 1px solid var(--color-primary);
+}
+/* CSS helper Selector */
+
+/* Responsive Selector */
+#navbar-lap {
+  display: block;
+}
+
+#navbar-tablet {
+  display: none;
+}
+
+#navbar-mobile {
+  display: none;
+}
+
+section#about-tap-lab {
+  display: block;
+}
+
+section#about-mobile {
+  display: none;
+}
+
+section#job-info-lap-mobile {
+  display: block;
+}
+
+section#job-info-tablet {
+  display: none;
+}
+
+section#certificate-lap-mobile {
+  display: block;
+}
+
+section#certificate-tablet {
+  display: none;
+}
+
+.hlt-w-22 {
+  width: 22.5%;
+}
+
+.hlt-w-10 {
+  width: 10%;
+}
+/* Responsive Selector */
+
+/* CSS main Selector */
+.personal-avatar {
+  left: 50%;
+  transform: translateX(-50%);
+  width: 200px;
+  height: 200px;
+  border-radius: 999px;
+  border: 10px solid var(--color-white);
+}
+
+.personal-avatar > img.d-block {
+  width: 100%;
+  height: 100%;
+  border-radius: 999px;
+}
+
+.info-detail {
+  display: block;
+}
+
+.info-detail.hlt-hide {
+  display: none;
+}
+
+.info-res-form {
+  display: block;
+}
+
+.info-res-form.hlt-hide {
+  display: none;
+}
+
+.hobby-img {
+  height: 56px;
+  width: 56px;
+  border-radius: 999px;
+  border: 2px solid var(--color-text-aqua);
+}
+
+/* Skill Style */
+.skill-point {
+  border-radius: 999px;
+  background-color: var(--color-text-aqua);
+  height: 4px;
+  width: 54px;
+}
+
+.skill-point.point-none {
+  background-color: var(--color-ligt-gray);
+}
+.info-title:hover > .btn-info-show {
+  display: block;
+}
+.btn-info-show {
+  display: none;
+  top: 118px;
+  left: 48px;
+  width: 200px;
+  height: 40px;
+  border: none;
+  border-radius: 999px;
+}
+
+.jobs-info-details {
+  display: none;
+}
+
+.jobs-info-details.hlt-show {
+  display: block;
+}
+
+.project-date {
+  min-width: 55px;
+  max-width: 65px;
+  color: var(--color-white);
+  border-radius: 999px;
+  background-color: var(--color-text-aqua);
+  padding: 5px 10px 5px 10px;
+}
+/* CSS main Selector */

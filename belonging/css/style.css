@@ -1,0 +1,137 @@
+section > .container {
+  width: 1270px;
+  margin: auto;
+  /* display: block; */
+
+  padding: 30px 50px;
+}
+
+/* Banner */
+div#banner .banner-img {
+  filter: contrast(0.5);
+}
+
+.banner-title {
+  top: 100px;
+  text-align: center;
+  left: 50%;
+  transform: translateX(-50%);
+}
+/* Banner */
+
+/* Navigation Bar */
+#nav-bar {
+  text-align: center;
+}
+
+section#nav-bar nav.container {
+  padding: 0;
+}
+
+.container .navbar-item {
+  min-width: 150px;
+  height: 100%;
+  border-left: 1px solid var(--color-gray);
+  border-right: 1px solid var(--color-gray);
+}
+/* Navigation Bar */
+
+.navbar-item.pos-abs.personal-avatar {
+  width: 230px;
+  height: 230px;
+  border-radius: 999px;
+  border: 10px solid var(--color-white);
+}
+
+.navbar-item.pos-abs.personal-avatar > img.d-block {
+  width: 100%;
+  height: 100%;
+  border-radius: 999px;
+}
+
+/* Job Info Style */
+.work-status {
+  color: var(--color-white);
+  border-radius: 7px;
+  background-color: var(--color-text-aqua);
+  font-style: italic;
+  padding: 2px 5px 2px 5px;
+}
+
+.jobs-info-details {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 100px auto;
+  grid-template-areas:
+    "job-title job-title job-title job-img"
+    "job-desc job-desc job-desc job-desc";
+}
+
+.job-title {
+  grid-area: job-title;
+}
+
+.job-img {
+  grid-area: job-img;
+}
+
+.job-desc {
+  grid-area: job-desc;
+}
+/* Job Info Style */
+
+/* Hobby Style */
+.hobby-img {
+  height: 56px;
+  width: 56px;
+  border-radius: 999px;
+  border: 2px solid var(--color-text-aqua);
+}
+/* Hobby Style */
+
+/* Skill Style */
+.skill-point {
+  border-radius: 999px;
+  background-color: var(--color-text-aqua);
+  height: 3px;
+  width: 50px;
+}
+
+.skill-point.point-none {
+  background-color: var(--color-ligt-gray);
+}
+/* Skill Style */
+
+/* Certificate Style */
+.cert-img {
+  width: 100%;
+  padding-left: 16px;
+}
+
+.cert-img > img.d-block {
+  width: 100%;
+}
+/* Certificate Style */
+
+/* Project Style */
+.project-img {
+  width: 100%;
+}
+
+.project-img > img.d-block {
+  width: 100%;
+}
+
+.project-date {
+  color: var(--color-white);
+  border-radius: 999px;
+  background-color: var(--color-text-aqua);
+  padding: 5px 10px 5px 10px;
+}
+
+.project-details-table {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: 125px 1fr auto;
+}
+/* Project Style */
